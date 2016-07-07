@@ -141,7 +141,30 @@ isForceWith("Leia")
 */
 // write your code here
 
+func bankAccounts (account1: Int, account2: Int) {
+    //account 2 is my account 
+    
+    var account1a = account1
+    var account2a = account2
+    
+    print("Current balance of account 1 is: \(account1) while your current balance is: \(account2)")
+    
+    let testingAccountBalance = account1 - 10
+    
+    print("Testing for transfer...")
+    
+    if testingAccountBalance >= 0 {
+        account1a -= 10
+        account2a += 10
+        print("The balance of account 1 is now \(account1a) and the balace of your account is now: \(account2a)")
+    }
+    else {
+        print("No transfer has been made")
+    }
+    
+}
 
+print(bankAccounts(200, account2: 200))
 
 
 
